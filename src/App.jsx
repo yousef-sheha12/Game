@@ -11,8 +11,8 @@
 
      <Router>
      <Routes>
-      <Route path='/play' element={<Games />} />
-      <Route path='/' element={<SignPage />} />
+      <Route path='/Game/play' element={<Games />} />
+      <Route path='/Game' element={<SignPage />} />
      </Routes>
      </Router>
        
