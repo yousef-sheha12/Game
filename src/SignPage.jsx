@@ -8,7 +8,7 @@ function SignPage() {
   const [player2, setPlayer2] = useState('');
 
   const handleSignin = () => {
-    navigate('/Game/play', { state: { player1, player2 } });
+    navigate('/play', { state: { player1, player2 } });
   };
 
   return (
