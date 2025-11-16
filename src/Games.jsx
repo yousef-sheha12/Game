@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./App.css";
+import dice1 from "./assets/dice-1.png";
+import dice2 from "./assets/dice-2.png";
+import dice3 from "./assets/dice-3.png";
+import dice4 from "./assets/dice-4.png";
+import dice5 from "./assets/dice-5.png";
+import dice6 from "./assets/dice-6.png";
+
+const dicePhotos = [dice1, dice2, dice3, dice4, dice5, dice6];
 
 function Games() {
   const location = useLocation();
@@ -97,7 +105,7 @@ function Games() {
 
       {/* {dice && <img src={`/dice-${dice}.png`} alt="Playing dice" className="dice" />} */}
       <img
-        src={`src/assets/dice-${dice || 5}.png`}
+        src={dicePhotos[dice ? dice - 1 : 4]}
         alt="Playing dice"
         className={`dice ${dice ? "" : "hidden"}`}
       />
