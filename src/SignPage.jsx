@@ -1,20 +1,20 @@
-import './index.css';
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import "./index.css";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function SignPage() {
   const navigate = useNavigate();
-  const [player1, setPlayer1] = useState('');
-  const [player2, setPlayer2] = useState('');
+  const [player1, setPlayer1] = useState("");
+  const [player2, setPlayer2] = useState("");
 
   const handleSignin = () => {
-    navigate('/play', { state: { player1, player2 } });
+    navigate("/play", { state: { player1, player2 } });
   };
 
   return (
     <>
       <div className="sign">
-        <div className='container'>
+        <div className="container">
           <h1>Sign In</h1>
           <label htmlFor="player1">PLAYER 1</label>
           <input
